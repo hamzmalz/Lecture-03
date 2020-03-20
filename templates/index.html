@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    New Years
+{% endblock %}
+
+{% block body %}
+
+    {% if new_year %}
+        <h1>YES! Happy New Year</h1>
+    {% else %}
+        <h1>NO</h1>
+    {% endif %}
+
+    <a href="{{ url_for ('names') }}">Names</a>
+
+{% endblock %}
